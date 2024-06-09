@@ -33,7 +33,7 @@ class Csshi < Formula
     end
     bin.install 'csshi'
     rw_info = python_shebang_rewrite_info("#{libexec}/bin/python3")
-    rewrite_shebang detected_python_shebang, bin/"csshi'
+    rewrite_shebang detected_python_shebang, bin/'csshi'
   end
 
   test do
