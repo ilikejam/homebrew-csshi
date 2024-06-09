@@ -27,16 +27,16 @@ class Csshi < Formula
   end
 
   def install
-    venv = virtualenv_create(libexec, 'python3')
+    venv = virtualenv_create(libexec, "python3")
     Csshi.pip_pkgs.each do |pkg|
       venv.pip_install pkg
     end
-    bin.install 'csshi'
+    bin.install "csshi"
     rw_info = python_shebang_rewrite_info("#{libexec}/bin/python3")
-    rewrite_shebang rw_info, bin/'csshi'
+    rewrite_shebang rw_info, bin/"csshi"
   end
 
   test do
-    system 'bin/csshi', '--help'
+    system bin/"csshi", "--help"
   end
 end
