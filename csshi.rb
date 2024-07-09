@@ -7,16 +7,16 @@ class Csshi < Formula
 
   desc 'csshi - ClusterSSH for iTerm2'
   homepage 'https://github.com/ilikejam/csshi'
-  url 'https://github.com/ilikejam/csshi/archive/refs/tags/v1.4.tar.gz'
-  sha256 'b8d2c4f9e3a6770e694ae59ebdd8d0d0f83a7ce69da12dd300e6150402608656'
+  url 'https://github.com/ilikejam/csshi/archive/refs/tags/v1.5.tar.gz'
+  sha256 'd73c951e9ab0397aa631dfda05163a4a5ba827d39b9552686f662fd09a280cb4'
   license 'GPL-2.0-only'
 
   depends_on 'python@3.12'
 
   @pip_pkgs = [
     'iterm2==2.7',
-    'protobuf==4.25.1',
-    'websockets==10.4',
+    'protobuf==5.27.2',
+    'websockets==12.0',
     'pyobjc==9.2',
     'pyobjc-core==9.2',
     'pyobjc-framework-Cocoa==9.2'
