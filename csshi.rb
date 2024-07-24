@@ -7,8 +7,8 @@ class Csshi < Formula
 
   desc 'csshi - ClusterSSH for iTerm2'
   homepage 'https://github.com/ilikejam/csshi'
-  url 'https://github.com/ilikejam/csshi/archive/refs/tags/v1.5.tar.gz'
-  sha256 'd73c951e9ab0397aa631dfda05163a4a5ba827d39b9552686f662fd09a280cb4'
+  url 'https://github.com/ilikejam/csshi/archive/refs/tags/v1.6.tar.gz'
+  sha256 '4de9fc64b78ae321e302440062c6848315dd397cc7705e4b75e43d2e79d6808c'
   license 'GPL-2.0-only'
 
   depends_on 'python@3.12'
