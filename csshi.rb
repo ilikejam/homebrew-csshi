@@ -11,15 +11,15 @@ class Csshi < Formula
   sha256 '65994b6242d41b910f71214b41b279307e4390fe03594b5a45b128cc7fb95ca9'
   license 'GPL-2.0-only'
 
-  depends_on 'python@3.12'
+  depends_on 'python@3.13'
 
   @pip_pkgs = [
-    'iterm2==2.7',
-    'protobuf==5.27.2',
-    'websockets==12.0',
-    'pyobjc==9.2',
-    'pyobjc-core==9.2',
-    'pyobjc-framework-Cocoa==9.2'
+    'iterm2==2.9',
+    'protobuf==6.30.2',
+    'websockets==15.0.1',
+    'pyobjc==11.0',
+    'pyobjc-core==11.0',
+    'pyobjc-framework-Cocoa==11.0'
   ]
 
   class << self
@@ -27,16 +27,16 @@ class Csshi < Formula
   end
 
   def install
-    venv = virtualenv_create(libexec, "python3")
+    venv = virtualenv_create(libexec, 'python3')
     Csshi.pip_pkgs.each do |pkg|
       venv.pip_install pkg
     end
-    bin.install "csshi"
     rw_info = python_shebang_rewrite_info("#{libexec}/bin/python3")
-    rewrite_shebang rw_info, bin/"csshi"
+    rewrite_shebang rw_info, 'csshi'
+    bin.install 'csshi'
   end
 
   test do
-    system bin/"csshi", "--help"
+    system bin / 'csshi', '--help'
   end
 end
