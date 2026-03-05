@@ -12,14 +12,15 @@ class Csshi < Formula
   license 'GPL-2.0-only'
 
   depends_on 'python@3.13'
+  depends_on 'python-setuptools'
 
   @pip_pkgs = [
-    'iterm2==2.9',
-    'protobuf==6.30.2',
-    'websockets==15.0.1',
-    'pyobjc==11.0',
-    'pyobjc-core==11.0',
-    'pyobjc-framework-Cocoa==11.0'
+    'iterm2==2.14',
+    'protobuf==7.34.0',
+    'websockets==16.0',
+    'pyobjc==12.1',
+    'pyobjc-core==12.1',
+    'pyobjc-framework-Cocoa==12.1'
   ]
 
   class << self
