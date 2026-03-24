@@ -12,20 +12,15 @@ Update:
 
 Commit, tag, push with tags, cut Release
 ```
-brew remove csshi
-brew untap ilikejam/csshi
-brew tap-new ilikejam/csshi
 cd /opt/homebrew/Library/Taps/ilikejam/homebrew-csshi/Formula
 ```
-Copy csshi.rb from ilikejam/homebrew-csshi  
-Update tar.gz URL and sha256
+Update tar.gz URL and sha256 in `csshi.rb`
 ```
 brew update-python-resources -p csshi
 ```
-Pick only the modules required (i.e. those from requirements.txt/pyproject.toml) and paste into csshi.rb
+Pick only the modules required (i.e. those from requirements.txt/pyproject.toml) and paste into `csshi.rb`
 ```
 rubocop -a csshi.rb
 ```
-Copy csshi.rb back to ilikejam/homebrew-csshi repo  
 Commit  
 Push
