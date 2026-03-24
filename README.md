@@ -22,7 +22,10 @@ Update tar.gz URL and sha256
 ```
 brew update-python-resources -p csshi
 ```
-Pick only the modules required (i.e. those from requirements.txt/pyproject.toml) and paste into ./csshi.rb  
+Pick only the modules required (i.e. those from requirements.txt/pyproject.toml) and paste into csshi.rb
+```
+rubocop -a csshi.rb
+```
 Copy csshi.rb back to ilikejam/homebrew-csshi repo  
 Commit  
 Push
