@@ -3,6 +3,10 @@ Homebrew tap for csshi
 
 https://github.com/ilikejam/csshi
 
+## Python version
+
+As an arbitrary default (but probably reasonable given the sorts of people who use `csshi`), we track the `awscli` homebrew formula's python version.
+
 ## Python modules
 
 We're not a published pypi package, so some effort is required to update the python deps here:  
