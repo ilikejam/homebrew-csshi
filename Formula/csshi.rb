@@ -7,8 +7,8 @@ class Csshi < Formula
 
   desc 'csshi - ClusterSSH for iTerm2'
   homepage 'https://github.com/ilikejam/csshi'
-  url 'https://github.com/ilikejam/csshi/archive/refs/tags/v1.14.tar.gz'
-  sha256 'bdbef4da3eaacf14b7643a4e3ff5432d8a4fdfcde6b14e91e7a6cc694ce12f0d'
+  url 'https://github.com/ilikejam/csshi/archive/refs/tags/v1.15.tar.gz'
+  sha256 'a356bf7fb381e80a9e8ba9d86a32b8fa5bccda01510b8b05c65cb142636ed524'
   license 'GPL-2.0-only'
 
   depends_on 'python@3.14'
@@ -21,11 +21,6 @@ class Csshi < Formula
   resource 'protobuf' do
     url 'https://files.pythonhosted.org/packages/f2/00/04a2ab36b70a52d0356852979e08b44edde0435f2115dc66e25f2100f3ab/protobuf-7.34.0.tar.gz'
     sha256 '3871a3df67c710aaf7bb8d214cc997342e63ceebd940c8c7fc65c9b3d697591a'
-  end
-
-  resource 'pyobjc' do
-    url 'https://files.pythonhosted.org/packages/17/06/d77639ba166cc09aed2d32ae204811b47bc5d40e035cdc9bff7fff72ec5f/pyobjc-12.1.tar.gz'
-    sha256 '686d6db3eb3182fac9846b8ce3eedf4c7d2680b21b8b8d6e6df054a17e92a12d'
   end
 
   resource 'pyobjc-core' do
