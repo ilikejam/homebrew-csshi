@@ -9,22 +9,24 @@ As an arbitrary default (but probably reasonable given the sorts of people who u
 
 ## Python modules
 
-We're not a published pypi package, so some effort is required to update the python deps here:  
+We're not a published pypi package, so some effort is required to update the python deps here.
+In the main csshi repo:
 Update:
-* ilikejam/csshi:requirements.txt
-* ilikejam/csshi:pyproject.toml
+* requirements.in
+* pyproject.toml
 
-Commit, tag, push with tags, cut Release
+Run: `pip-compile --generate-hashes --strip-extras requirements.in`
+Test csshi, commit, push, tag, push tags, cut new Release
+
+Then:
 ```
 cd /opt/homebrew/Library/Taps/ilikejam/homebrew-csshi/Formula
 ```
 Update tar.gz URL and sha256 in `csshi.rb`
 ```
-brew update-python-resources -p csshi
+brew update-python-resources csshi
+cp csshi.rb $TMPDIR/
+rubocop -a $TMPDIR/csshi.rb
+cp -f $TMPDIR/csshi.rb csshi.rb
 ```
-Pick only the modules required (i.e. those from requirements.txt/pyproject.toml) and paste into `csshi.rb`
-```
-rubocop -a csshi.rb
-```
-Commit  
-Push
+Commit, push

@@ -7,30 +7,30 @@ class Csshi < Formula
 
   desc 'csshi - ClusterSSH for iTerm2'
   homepage 'https://github.com/ilikejam/csshi'
-  url 'https://github.com/ilikejam/csshi/archive/refs/tags/v1.16.tar.gz'
-  sha256 '70d65a110dc5b170f033d2696e8c64985ce94467312aed70b169f23097845a1d'
+  url 'https://github.com/ilikejam/csshi/archive/refs/tags/v1.17.tar.gz'
+  sha256 '13b000a89f9ae9dd3c0ee3c471aecb155055dfb5119535958ee72fb27a92eaa9'
   license 'GPL-2.0-only'
 
   depends_on 'python@3.14'
 
   resource 'iterm2' do
-    url 'https://files.pythonhosted.org/packages/70/9e/ba83b3feb6a6f226b52b665e94149b53e6e2fb7ac91ee7ff4acc7d47d825/iterm2-2.14.tar.gz'
-    sha256 'b88bd369520a50955c034c2666d7a5d647c2a3a33003c06f4be8013acbaa2d71'
+    url 'https://files.pythonhosted.org/packages/4f/fb/258e7e3bfcacf9cdfc378ae4ee2aca743dbccd6a12ffceee12957f67dff3/iterm2-2.20.tar.gz'
+    sha256 '168d3807cd58b3e678476852be2bb4a5cd89f008d95e37d2777d9810731cff08'
   end
 
   resource 'protobuf' do
-    url 'https://files.pythonhosted.org/packages/f2/00/04a2ab36b70a52d0356852979e08b44edde0435f2115dc66e25f2100f3ab/protobuf-7.34.0.tar.gz'
-    sha256 '3871a3df67c710aaf7bb8d214cc997342e63ceebd940c8c7fc65c9b3d697591a'
+    url 'https://files.pythonhosted.org/packages/60/fd/5b1491d9e4b586d621c54f4c36b888714164b6875f8d6afa3f9072906a51/protobuf-7.35.0.tar.gz'
+    sha256 'a2efd84605f41e559f1881b0912b44099d0a2ac9bf46b3474823f10fb393b0e6'
   end
 
   resource 'pyobjc-core' do
-    url 'https://files.pythonhosted.org/packages/b8/b6/d5612eb40be4fd5ef88c259339e6313f46ba67577a95d86c3470b951fce0/pyobjc_core-12.1.tar.gz'
-    sha256 '2bb3903f5387f72422145e1466b3ac3f7f0ef2e9960afa9bcd8961c5cbf8bd21'
+    url 'https://files.pythonhosted.org/packages/2a/e8/a6cc12669211e7c9b29e8f26bf2159e67c7a73555dc229018abf46d8167a/pyobjc_core-12.2.tar.gz'
+    sha256 '51d7de4cfa32f508c6a7aac31f131b12d5e196a8dcf588e6e8d7e6337224f66d'
   end
 
   resource 'pyobjc-framework-cocoa' do
-    url 'https://files.pythonhosted.org/packages/02/a3/16ca9a15e77c061a9250afbae2eae26f2e1579eb8ca9462ae2d2c71e1169/pyobjc_framework_cocoa-12.1.tar.gz'
-    sha256 '5556c87db95711b985d5efdaaf01c917ddd41d148b1e52a0c66b1a2e2c5c1640'
+    url 'https://files.pythonhosted.org/packages/6d/cc/927169225e72bab9c9b44285656768fb75052a0bc85fdbca62740e1ca43c/pyobjc_framework_cocoa-12.2.tar.gz'
+    sha256 '20b392e2b7241caad0538dfde12143343e5dfe48f72e7df660a7548e635903dc'
   end
 
   resource 'websockets' do
